@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Husain Faizan | Full Stack Web Developer</title>
+
+  <!-- Animate.css for entrance animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background Overlay for Text Readability -->
+  <div class="bg-overlay"></div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar animate__animated animate__fadeInDown">
+    <div class="logo">HF</div>
+    <div class="nav-status">
+      <span class="dot"></span> Available for projects
+    </div>
+  </nav>
+
+  <!-- Main Website Content -->
+  <main class="content-container">
+    
+    <!-- Hero Section -->
+    <header class="hero-section">
+      <h1 class="name animate__animated animate__bounceInDown">Husain Faizan</h1>
+      <p class="role animate__animated animate__fadeInUp animate__delay-1s">Full Stack Web Developer</p>
+      <p class="location animate__animated animate__fadeInUp animate__delay-1s">
+        <i class="fa-solid fa-location-dot"></i> Lahore, Pakistan
+      </p>
+    </header>
+
+    <!-- Tech Stack Section -->
+    <section class="section animate__animated animate__fadeInUp animate__delay-1s">
+      <h2 class="section-title"><i class="fa-solid fa-code"></i> Core Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-tag"><i class="fa-brands fa-html5"></i> HTML5</div>
+        <div class="skill-tag"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
+        <div class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript</div>
+        <div class="skill-tag highlight"><i class="fa-solid fa-layer-group"></i> Full Stack Development</div>
+      </div>
+    </section>
+
+    <!-- Contact Info Section -->
+    <section class="section animate__animated animate__fadeInUp animate__delay-1s">
+      <h2 class="section-title"><i class="fa-solid fa-envelope"></i> Get In Touch</h2>
+      <div class="contact-container">
+        
+        <!-- Email Link & Copy -->
+        <div class="contact-item">
+          <div class="contact-details">
+            <i class="fa-solid fa-paper-plane contact-icon"></i>
+            <div>
+              <span class="contact-label">Email</span>
+              <a href="mailto:vibedivinewastaken@gmail.com" class="contact-value">vibedivinewastaken@gmail.com</a>
+            </div>
+          </div>
+          <button class="copy-btn" onclick="copyValue('vibedivinewastaken@gmail.com', this)">
+            <i class="fa-regular fa-copy"></i> <span>Copy</span>
+          </button>
+        </div>
+
+        <!-- Phone Link & Copy -->
+        <div class="contact-item">
+          <div class="contact-details">
+            <i class="fa-solid fa-phone contact-icon"></i>
+            <div>
+              <span class="contact-label">Phone</span>
+              <a href="tel:+923157643737" class="contact-value">+92 3157643737</a>
+            </div>
+          </div>
+          <button class="copy-btn" onclick="copyValue('+923157643737', this)">
+            <i class="fa-regular fa-copy"></i> <span>Copy</span>
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Notification Toast -->
+  <div id="toast" class="toast">
+    <i class="fa-solid fa-circle-check"></i> <span id="toast-text">Copied to clipboard!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
